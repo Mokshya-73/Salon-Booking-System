@@ -1,0 +1,142 @@
+body {
+	
+	font-size: 15px;
+  height: 200vh;
+    width: 100%;
+	font-weight: bold;
+  font-family:monospace;
+  padding: 0px;
+  margin: 0px;
+  background-image: url('c1.jpg');  
+  background-position: center;
+  
+    background-size: cover;
+    justify-content: center;
+    
+}
+
+
+ul {list-style-type: none;margin:0;padding: 0;overflow: hidden; background-color:#19181a;width: 100%;
+    height: 7dvh;}
+
+li {float: left;}
+
+li a {display: block;color: white;text-align: center;padding: 20px 16px;text-decoration: none;font-family:Serif}
+
+li a:hover:not(.active) {background-color: #1e8686;}
+
+.active {background-color: #0c5954;}
+
+
+input[type=text], select, textarea,input[type=number],input[type=email],input[type=tel]  {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(133, 123, 123);
+  color: #121111;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+   
+}
+
+
+
+input[type=reset] {
+  background-color: #7a496a;
+  color: rgb(251, 248, 248);
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+.p3{
+	font-size: 30px;
+  font-family: monospace;
+	color: #DB7093;
+	font-weight: bold;
+	font-family: monospace;
+}
+
+.p4{
+	font-size: 30px;
+  font-family: monospace;
+	color: #891e40;
+	font-weight: bold;
+	font-family:Cambria;
+}
+
+
+
+
+#n1{
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background-color: #9a6374;
+  float: left;
+  padding: 16px 12px;
+  font-style:normal;
+  
+
+}
+.outer {
+ 
+  font-family: monospace;
+  padding: 7vh;
+  height:10%;
+  margin: 30px;
+  
+} 
+
+#n2{
+  
+  color: rgb(0, 0, 0);
+ 
+  
+  
+
+}
+
+input[type=submit] {
+  background-color: #efb1c4;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.t1{
+  background-color: #664b5b;
+  color: rgb(255, 255, 255);
+  height:5vh;
+  margin: 30px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+
+
+}
+
+
+
+
+
+
+
+.footer { 
+			position: fixed; 
+			left: 0; 
+			bottom: 0; 
+			width: 100%; 
+			background-color: #675050; 
+			color: rgb(255, 255, 255); 
+			text-align: center;
+			font-size: 15px;
+      
+		}
+

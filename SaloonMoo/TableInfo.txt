@@ -1,0 +1,292 @@
+<form action="./process.php" method="POST">
+    <fieldset style="border: 2px solid #b0b0b0;">
+
+    <legend class="p3">Contact Us</legend>
+
+
+  </br></br>
+</br></br>
+</br></br>
+
+
+
+
+
+
+<h1 class="p4">Enter your Details</h1>
+    </br></br>
+
+
+
+
+
+
+
+
+    <div class="t1"><p>Customer Details </p></div>
+    
+
+    <label for="CustomerId">Customer ID  :</label>
+    <input type="number" id="CustomerId" name="CustomerId" placeholder="2000">
+  </br></br>
+
+    <label for="FirstName">First Name :</label>
+    <input type="text" id="FirstName" name="FirstName" placeholder="Sudeshika">
+  </br></br>
+
+    <label for="LastName">Last Name :</label>
+    <input type="text" id="LastName" name="LastName" placeholder="Vithanage">
+  </br></br>
+
+  <label for="PhoneNumber	">Phone Number  :</label>
+    <input type="number" id="PhoneNumber	" name="PhoneNumber	" placeholder="0753467729">
+  </br></br>
+
+
+    <label for="Address">Address :</label>
+    <input type="text" id="Address" name="Address" placeholder="12/3,Temple road,Colombo">
+  </br></br>
+
+
+	  <label>Gender : </label>
+		<input type="radio" name="Gender" value="Male">Male
+		<input type="radio" name="Gender" value="Female">Female<br><br>
+
+
+
+
+
+
+
+
+
+
+  </br></br>
+
+  <div class="t1"><p>Enter your Appoinment Details </p></div>
+
+  
+
+
+  <label for="AppoinmentId">Appoinment ID  :</label>
+    <input type="number" id="AppoinmentId" name="AppoinmentId" placeholder="No.01">
+  </br></br>
+
+    <label for="AppoinmentDate">Appoinment Date :</label>
+    <input type="date" id="AppoinmentDate" name="AppoinmentDate" placeholder="2023-7-12">
+  </br></br>
+
+    <label for="AppoinmentTime">Appoinment Time :</label>
+    <input type="time" id="AppoinmentTime" name="AppoinmentTime" placeholder="4.30 PM">
+  </br></br>
+
+
+
+
+
+
+
+
+
+
+</br></br>
+
+<div class="t1"><p>What do you want from us  </p></div>
+
+
+
+<label for="StyleId">Style ID :</label>
+  <input type="number" id="StyleId" name="StyleId" placeholder="01">
+</br></br>
+
+  <label for="StyleName">Style Name :</label>
+  <input type="text" id="StyleName" name="StyleName" placeholder="Rebonding">
+</br></br>
+
+  <label for="Discription	">Customer Discription :</label>
+  <input type="text" id="Discription	" name="Discription	" placeholder="I want to layer and colour the hair         ">
+</br></br>
+</br></br>
+</br></br>
+
+		
+
+<h1 class="p4">Are you interested in exploring our exquisite range of products</h1>
+    </br></br>
+
+
+
+
+
+
+
+
+    <div class="t1"><p>Product</p></div>
+
+    
+    <label for="ProductId">Product ID  :</label>
+    <input type="number" id="ProductId" name="ProductId" placeholder="01">
+  </br></br>
+
+
+
+  <label>Brand Name :</label><br><br>
+    <input type="checkbox" id="Revlon" name="Revlon" value="Revlon">
+    <label for="letter1"> Revloan</label><br>
+    <input type="checkbox" id="Belloes" name="Belloes" value="Belloes">
+    <label for="letter2"> Bellose</label><br>
+    <input type="checkbox" id="Keune" name="Keune" value="Keune">
+    <label for="letter3"> Keune</label><br>
+    
+    <br><br>
+
+    <label for="Colour">Colours :</label>
+    <input type="text" id="Colour" name="Colour" placeholder="Red">
+  </br></br>
+
+    <label for="Discription">Discription :</label>
+    <input type="text" id="Discription" name="Discription" placeholder="  Waht you want ? ...............................">
+  </br></br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</br></br>
+
+
+<div class="t1"><p>Details for Buying</p></div>
+
+
+<label for="SaleId ">Sale ID :</label>
+  <input type="number" id="SaleId " name="SaleId " placeholder="01">
+</br></br>
+
+  <label for="fname">Product Name :</label>
+  <input type="text" id="fname" name="fname" placeholder="Revloan">
+</br></br>
+
+  <label for="OrderDate">Order Date :</label>
+  <input type="date" id="OrderDate" name="OrderDate" placeholder="2023-7-12">
+</br></br>
+
+
+<label for="Districts">Quantity :</label>
+
+    <select id="Quentity" name="Quentity">
+
+      <option value=" 01"> 01</option>
+      <option value=" 02">02 </option>
+      <option value=" 03"> 03</option>
+      <option value=" 04"> 04</option>
+      <option value=" 05"> 05</option>
+      <option value=" 06">06 </option>
+      <option value=" 07"> 07</option>
+      <option value=" 08"> 08</option>
+      <option value=" 09"> 09</option>
+      <option value=" 10"> 10</option>
+      
+    </select>
+    <br><br>
+
+    <label for="Location">Location :</label>
+    <input type="text" id="Location" name="Location" placeholder="Colombo">
+  </br></br>
+</br></br>
+</br></br>
+
+		
+
+
+ <input type="submit" value="Submit">
+ <input type="reset" value="Reset">
+ 
+
+
+
+
+</br></br>
+</br></br>
+</br></br>
+
+
+
+    </fieldset>
+  </form>
+
+
+
+
+Table 01: Customer_Details
+	 Attribute 01: CustomerId int Primary Key
+	 Attribute 02: FirstName varchar(50)
+	 Attribute 03: LastName varchar(50)
+	 Attribute 04: PhoneNumber int
+	 Attribute 05: Address varchar(50)
+	 Attribute 06: Gender radio button  value 1:Male value 2:Female
+
+Table 02: Product_Details
+	 Attribute 01: ProductId int Primary Key
+	 Attribute 02: BrandName varchar(50) checkbox values{Revloan,Bellose,Keune}
+	 Attribute 03: Color varchar(50)
+	 Attribute 04: Discription varchar(50)
+	 Attribute 05: CustomerId foreign key from tabel Customer_Details
+
+Table 03: Selling_Details
+	 Attribute 01: SaleId int Primary Key
+	 Attribute 02: ProductName varchar(50)
+	 Attribute 03: OrderDate Date
+	 Attribute 04: Quentity int DropDown values values{1,2,3,4,5,6,7,8,9,10}
+	 Attribute 05: Location varchar(50)
+	 Attribute 06: CustomerId foreign key from tabel Customer_Details
+	 Attribute 07: ProductId foreign key from tabel Product_Details
+
+Table 04: Style_Details
+	 Attribute 01: StyleId int Primary Key
+	 Attribute 02: StyleName varchar(50)
+	 Attribute 03: Discription varchar(50)
+	 Attribute 04: CustomerId foreign key from tabel Customer_Details
+	 Attribute 05: ProductId foreign key from tabel Product_Details
+
+Table 05: Appoinment_Details
+	 Attribute 01: AppoinmentId int Primary Key
+	 Attribute 02: AppoinmentDate Date
+	 Attribute 03: AppoinmentTime Time
+	 Attribute 04: CustomerId foreign key from tabel Customer_Details
+	 Attribute 05: StyleId foreign key from tabel Style_Details
+
+DataBase Name:"SaloonMoo"
+
+
+
+Here i provided 5 tables with attributes and there Relationships.
+Write SQL query to Create database,create tables with respected attributes and make relationships according to given instructions.  
+use appropriate field name according to given HTML code
+
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+Write SQL query to Create database named "SaloonMoo",create tables with respected attributes and make relationships according to given instructions.
+Table list{Customer_Details,Product_Details,Selling_Details,Style_Details,Appoinment_Details}
+Relationships {
+		01.Product_Details attribute CustomerId is foreign key from tabel Customer_Details
+		02.Selling_Details attribute CustomerId is foreign key from tabel Customer_Details
+		03.Selling_Details attribute ProductId is foreign key from tabel Product_Details
+		04.Style_Details attribute CustomerId is foreign key from tabel Customer_Details
+		05.Style_Details attribute ProductId is foreign key from tabel Product_Details
+		06.Appoinment_Details attribute CustomerId is foreign key from tabel Customer_Details
+		07.Appoinment_Details attribute StyleId is foreign key from tabel Style_Details
+		
+
+
+Create php file to send data from above form to mysql database.

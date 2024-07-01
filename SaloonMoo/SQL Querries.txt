@@ -1,0 +1,60 @@
+
+CREATE DATABASE SaloonMoo;
+
+
+USE SaloonMoo;
+
+
+CREATE TABLE Customer_Details (
+    CustomerId INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    PhoneNumber INT,
+    Address VARCHAR(50),
+    Gender ENUM('Male', 'Female')
+);
+
+
+CREATE TABLE Product_Details (
+    ProductId INT PRIMARY KEY,
+    BrandName VARCHAR(50),
+    Color VARCHAR(50),
+    Discription VARCHAR(50),
+    CustomerId INT,
+    FOREIGN KEY (CustomerId) REFERENCES Customer_Details(CustomerId)
+);
+
+
+CREATE TABLE Selling_Details (
+    SaleId INT PRIMARY KEY,
+    ProductName VARCHAR(50),
+    OrderDate DATE,
+    Quantity INT,
+    Location VARCHAR(50),
+    CustomerId INT,
+    ProductId INT,
+    FOREIGN KEY (CustomerId) REFERENCES Customer_Details(CustomerId),
+    FOREIGN KEY (ProductId) REFERENCES Product_Details(ProductId)
+);
+
+
+CREATE TABLE Style_Details (
+    StyleId INT PRIMARY KEY,
+    StyleName VARCHAR(50),
+    Discription VARCHAR(50),
+    CustomerId INT,
+    ProductId INT,
+    FOREIGN KEY (CustomerId) REFERENCES Customer_Details(CustomerId),
+    FOREIGN KEY (ProductId) REFERENCES Product_Details(ProductId)
+);
+
+
+CREATE TABLE Appoinment_Details (
+    AppoinmentId INT PRIMARY KEY,
+    AppoinmentDate DATE,
+    AppoinmentTime TIME,
+    CustomerId INT,
+    StyleId INT,
+    FOREIGN KEY (CustomerId) REFERENCES Customer_Details(CustomerId),
+    FOREIGN KEY (StyleId) REFERENCES Style_Details(StyleId)
+);
